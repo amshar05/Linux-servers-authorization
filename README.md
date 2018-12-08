@@ -95,9 +95,9 @@ Take a baseline installation of a Linux distribution on a virtual machine and pr
   - Paste this code:
   ```
   <VirtualHost *:80>
-      ServerName 35.167.27.204
-      ServerAlias ec2-35-167-27-204.us-west-2.compute.amazonaws.com
-      ServerAdmin admin@35.167.27.204
+      ServerName 34.222.128.48
+      ServerAlias ec2-34-222-128-48.us-west-2.compute.amazonaws.com
+      ServerAdmin admin@34.222.128.48
       WSGIDaemonProcess catalog python-path=/var/www/catalog:/var/www/catalog/venv/lib/python2.7/site-packages
       WSGIProcessGroup catalog
       WSGIScriptAlias / /var/www/catalog/catalog.wsgi
