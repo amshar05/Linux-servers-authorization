@@ -27,7 +27,7 @@ Take a baseline installation of a Linux distribution on a virtual machine and pr
 3. Change SSH port from 22 to 2200
   - Run `sudo nano /etc/ssh/sshd_config`
   - Change the port from 22 to 2200
-  - Confirm by running `ssh -i ~/.ssh/udacity_key.rsa -p 2200 root@34.222.128.48`
+  - Confirm by running `ssh -i ~/.ssh/lightsail_key.rsa -p 2200 root@34.222.128.48`
 
 4. Configure the Uncomplicated Firewall (UFW) to only allow incoming connections for SSH (port 2200), HTTP (port 80), and NTP (port 123)
   - `sudo ufw allow 2200/tcp`
@@ -45,7 +45,7 @@ Take a baseline installation of a Linux distribution on a virtual machine and pr
   - Run `sudo nano /etc/ssh/sshd_config`
   - Change `PermitRootLogin without-password` line to `PermitRootLogin no`
   - Restart ssh with `sudo service ssh restart`
-  - Now you are only able to login using `ssh -i ~/.ssh/udacity_key.rsa -p 2200 grader@34.222.128.48`
+  - Now you are only able to login using `ssh -i ~/.ssh/lightsail_key.rsa -p 2200 grader@34.222.128.48`
 
 8. Install Apache
   - `sudo apt-get install apache2`
