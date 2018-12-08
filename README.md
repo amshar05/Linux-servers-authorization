@@ -133,7 +133,7 @@ Take a baseline installation of a Linux distribution on a virtual machine and pr
   - Change create engine line in your `__init__.py` and `database_setup.py` to:
   `engine = create_engine('postgresql://catalog:password@localhost/catalog')`
   - `python /var/www/catalog/catalog/database_setup.py`
-  - Make sure no remote connections to the database are allowed. Check if the contents of this file `sudo nano /etc/postgresql/9.3/main/pg_hba.conf` looks like this:
+  - Make sure no remote connections to the database are allowed. Check if the contents of this file `sudo nano /etc/postgresql/9.5/main/pg_hba.conf` looks like this:
   ```
   local   all             postgres                                peer
   local   all             all                                     peer
