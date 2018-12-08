@@ -13,7 +13,7 @@ Take a baseline installation of a Linux distribution on a virtual machine and pr
 ### Walkthrough
 
 1. Create new user named grader and give it the permission to sudo
-  - SSH into the server through `ssh -i ~/.ssh/udacity_key.rsa root@34.222.128.48`
+  - SSH into the server through `ssh -i ~/.ssh/lightsail_key.rsa root@34.222.128.48`
   - Run `$ sudo adduser grader` to create a new user named grader
   - Create a new file in the sudoers directory with `sudo nano /etc/sudoers.d/grader`
   - Add the following text `grader ALL=(ALL:ALL) ALL`
